@@ -5,23 +5,13 @@ import re
 def process(l):
     o = []
     slash = False
-    duplicate = None
     for i in l:
-        if i.startswith("%   "):
-            duplicate = i[2:]
-            o.append(i)
-        elif i.startswith("% ") and i.endswith("\\\\"):
+        if i.startswith("% ") and i.endswith("\\\\"):
             slash = True
             o.append(i)
         elif slash:
             o.append(i + "\\\\")
             slash = False
-        elif duplicate:
-            if i:
-                o.append(i)
-            else:
-                o.append(duplicate)
-            duplicate = None
         else:
             o.append(i)
     return o
