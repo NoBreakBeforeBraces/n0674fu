@@ -27,6 +27,8 @@ menu["序章"] = [f'{i:0>4}.tex' for i in range(1, 3)]
 masiro_forum_id = 330
 masiro_menu_thread_type = 3977
 
+sub_characters = None
+
 _masiro_thread_type_map = {
     "序章": 3983,
     "第一章": 3984,
