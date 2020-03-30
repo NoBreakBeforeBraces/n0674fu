@@ -22,7 +22,16 @@ description = """笹原直哉在某一天出手相救了同级的女生白金小
 author = "ふか田さめたろう"
 
 menu = OrderedDict()
+# 将range后括号内后一个数字设置为已翻译完成话数+1
 menu["序章"] = [f'{i:0>4}.tex' for i in range(1, 3)]
+# menu["第一章"] = [f'{i:0>4}.tex' for i in range(8, 8)]
+# menu["第二章"] = [f'{i:0>4}.tex' for i in range(20, 20)]
+# menu["第三章"] = [f'{i:0>4}.tex' for i in range(28, 28)]
+# menu["第四章"] = [f'{i:0>4}.tex' for i in range(36, 36)]
+# menu["第五章"] = [f'{i:0>4}.tex' for i in range(50, 50)]
+# menu["番外篇"] = [f'{i:0>4}.tex' for i in range(60, 60)]
+# menu["第六章"] = [f'{i:0>4}.tex' for i in range(62, 62)]
+# menu["第七章"] = [f'{i:0>4}.tex' for i in range(72, 72)]
 
 masiro_forum_id = 330
 masiro_menu_thread_type = 3977
@@ -30,6 +39,7 @@ masiro_menu_thread_type = 3977
 sub_characters = None
 
 _masiro_thread_type_map = {
+    "番外篇": 3980,
     "序章": 3983,
     "第一章": 3984,
     "第二章": 3985,
