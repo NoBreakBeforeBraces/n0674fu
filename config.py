@@ -23,7 +23,7 @@ author = "ふか田さめたろう"
 
 menu = OrderedDict()
 # 将range后括号内后一个数字设置为已翻译完成话数+1
-menu["序章"] = [f'{i:0>4}.tex' for i in range(1, 6)]
+menu["序章"] = [f'{i:0>4}.tex' for i in range(1, 7)]
 # menu["第一章"] = [f'{i:0>4}.tex' for i in range(8, 8)]
 # menu["第二章"] = [f'{i:0>4}.tex' for i in range(20, 20)]
 # menu["第三章"] = [f'{i:0>4}.tex' for i in range(28, 28)]
