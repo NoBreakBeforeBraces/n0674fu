@@ -20,7 +20,7 @@ if __name__ == '__main__':
     fl = glob.glob("*.tex")
     for j in fl:
         s = open(j, "rb").read().decode().split('\n')
-        if s[0] == '% Auto-slash processed':
+        if s[0].startswith('% Auto-slash processed'):
             continue
         r = ['% Auto-slash processed']
         r += process(s)
